@@ -54,7 +54,7 @@ jobs:
       - name: Install npm dependencies
         run: npm install
       - name: Build Android Release
-        run: npx react-native run-android --variant=release
+        run: npx react-native run-android 
 
   build_ios:
     needs: test
@@ -73,5 +73,5 @@ jobs:
           cd ios
           pod install
       - name: Build iOS Release
-        run: npx react-native run-ios --configuration Release --scheme YourAppScheme --device
+        run: npx react-native run-ios 
 
